@@ -1,51 +1,36 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>replit</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do list</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=poppins">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 
 <body>
-  <h1 class="heading">Calculate Me!</h1>
-  <div class="container">
-    <input class="input" type="text" placeholder="Enter Numbers" id="input">
-    <div class="row">
-      <button class="button">C</button>
-      <button class="button">100</button>
-      <button class="button">00</button>
-      <button class="button">/</button>
-    </div>
-    <div class="row">
-      <button class="button">7</button>
-      <button class="button">8</button>
-      <button class="button">9</button>
-      <button class="button">*</button>
-    </div>
-    <div class="row">
-      <button class="button">4</button>
-      <button class="button">5</button>
-      <button class="button">6</button>
-      <button class="button">+</button>
-    </div>
-    <div class="row">
-      <button class="button">1</button>
-      <button class="button">2</button>
-      <button class="button">3</button>
-      <button class="button">-</button>
-    </div>
-    <div class="row">
-      <button class="button">0</button>
-      <button class="button">.</button>
-      <button class="button">=</button>
-      <button class="button">%</button>
-    </div>
-  </div>
 
+    <div class="container">
+        <div class="top-conatiner">
+            <i class="fa-solid fa-clipboard-list"></i>
+            <h1>To Do list</h1>
+
+        </div>
+
+        <div class="input-box">
+            <input type="text" class="add-list" id="inputfield" placeholder="Add your task">
+            <button onclick="additem()" class="add">Add</button>
+        </div>
+
+        <ul id="taskList">
+
+        </ul>
+    </div>
+
+
+    <script src="script.js"></script>
 </body>
-<script src="script.js"></script>
-<script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
 
 </html>
